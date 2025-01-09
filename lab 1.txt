@@ -1,0 +1,63 @@
+Q1.Calculate the multiplication and sum of two numbers.
+
+#Accepting input from the user
+number1 = float(input("Enter first Number : "))
+number2 = float(input("Enter second Number : "))
+
+#Multiplication of two numbers
+multiplication = number1 * number2
+
+#Sum of two numbers
+sum = number1 + number2
+ 
+#print the multiplication and sum of two numbers
+print("The multiplication of two numbers is : " ,multiplication)
+print("The sum of two numbers is : " ,sum)
+------------------------------------------------------------------------------------------------------------------------
+Q2.Declare two variables and print that which variable is largest using ternary operators.
+
+#Accepting input from the user
+variable1 = float(input("Enter first number : "))
+variable2 = float(input("Enter second number : "))
+
+#print the largest number using ternary operator
+if variable1 > variable2:
+    print("largest number is : " ,variable1)
+
+else:
+    print("largest number is : " ,variable2)
+-------------------------------------------------------------------------------------------------------------------------
+Q3.Python program to convert the temperature in degree centigrade to fahrenheit.
+
+#Accepting the temperature from the user in ℃
+celsius = float(input("Enter the temperature in celsius : "))
+
+#Convert it into fahrenheit
+fahrenheit = (9/5) * celsius + 32
+print(celsius," ℃ is equal to fahrenheit ",fahrenheit)
+--------------------------------------------------------------------------------------------------------------------------
+Q4.Python program to find the area of a triangle whose sides are given.
+
+#Accepting input from the user
+base = float(input("Enter the base of triangle: "))
+height = float(input("Enter the height of triangle: "))
+
+#calculate the area of triangle
+area = 1/2 * base * height
+
+#print the area of triangle
+print("Area of Triangle is :",area)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

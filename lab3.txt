@@ -1,0 +1,103 @@
+Q1.Python program to check leap year.
+
+#Accepting input from the user
+year = int(input("Enter the Year : "))
+
+#Check the year is leap or not
+if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0) :
+     print(year," is a leap year")
+else:
+    print(year," is a not a leap year")
+------------------------------------------------------------------------------------------------
+Q2.Python program to find the largest among three numbers.
+
+#Taking inputs from the user
+number1 = float(input("Enter first number : "))
+number2 = float(input("Enter second number : "))
+number3 = float(input("Enter third number : "))
+
+#Check the largest number
+if number1 > number2 and number1 > number3 :
+       print(number1," is a largest number")
+elif number2 > number1 and number2 > number3 :
+       print(number2," is a largest number")
+else :
+       print(number3," is a largest number")
+---------------------------------------------------------------------------------------------
+Q3.Python program to check if a number is positive, negative and zero.
+
+#Taking input from the user
+number = float(input("Enter the number : "))
+
+#Check the number is positive , negative or zero
+if number > 0 :
+     print("The" ,number, " is positive")
+
+elif number < 0 :
+     print("The" ,number, " is negative")
+
+else :
+    print("The" ,number," is zero")
+--------------------------------------------------------------------------------------
+Q4.
+
+#Taking product code and order amount as an input
+product_code = int(input("Enter the product code : "))
+order_amount = int(input("Enter the order amount : "))
+
+#Applying discounts on the product code and order amount
+if product_code == 1:
+     if order_amount > 1000:
+         discount = 0.10
+     else:
+         discount = 0.0
+
+elif product_code == 2:
+    if order_amount > 100:
+         discount = 0.05
+    else:
+         discount = 0.0
+elif product_code == 3:
+    if order_amount > 500:
+         discount = 0.10
+    else:
+         discount = 0.0
+else:
+    print("Invalid product code!")
+    discount = 0.0
+
+#Calculate the final price after applying the discount
+discount_amount = order_amount * discount
+net_amount = order_amount - discount_amount
+
+#Displaying the net amount to be paid
+print("The net amount to be paid after discount is : Rs.",net_amount)
+------------------------------------------------------------------------------------------------
+Q5.
+
+#Taking the distance as an input 
+distance = float(input("Enter the distance traveled (in km) : "))
+
+#Calculate the distance
+if 1 <= distance <=50 :
+     fare = distance * 8
+elif 51 <= distance <=100 :
+     fare = distance * 10
+else:
+    fare = distance * 12
+
+#Display the fare
+if fare > 0 :
+    print("The fare for" ,distance, "km is : Rs.", fare)
+
+   
+
+     
+
+
+
+
+
+
+
+
